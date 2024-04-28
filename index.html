@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus Slayer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-info">
+            <p>Score : <span id="score"></span></p>
+            <p>Fail : <span id="fail"></span></p>
+            <p>Timer : <span id="timer"></span> Seconds</p>
+            <button onclick="location.reload()">Restart</button>
+            <button onclick="pauseGame()">Pause</button>
+        </div>
+        <div id="board">
+            <div id="main">
+                <div id="col1" class="col">
+                    <div id="virus1"></div>
+                    <div id="top"></div>
+                    <div id="bottom"></div>
+                </div>
+                <div id="col2" class="col">
+                    <div id="virus2"></div>
+                    <div id="top"></div>
+                    <div id="bottom"></div>
+                </div>
+                <div id="col3" class="col">
+                    <div id="virus3"></div>
+                    <div id="top"></div>
+                    <div id="bottom"></div>
+                </div>
+                <div id="col4" class="col">
+                    <div id="virus4"></div>
+                    <div id="top"></div>
+                    <div id="bottom"></div>
+                </div>
+            </div>
+            <div id="button-area">
+                <div id="btn">D</div>
+                <div id="btn">F</div>
+                <div id="btn">J</div>
+                <div id="btn">K</div>
+            </div>
+        </div>
+        <div id="modalOver" class="modalOver">
+            <div class="modal-content">
+                <h3 id="modalTitle">Game Over</h3>
+                <p id="modalDescription">game over</p>
+                <button onclick="location.reload()">restart</button>
+            </div>
+        
+        </div>
+        <div id="modalPause" class="modalOver">
+            <div class="modal-content">
+                <h3 id="modalTitle">GAME PAUSED</h3>
+                <button onclick="resumeGame()">resume</button>
+        </div>
+
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>

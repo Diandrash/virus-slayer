@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+#board {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 800px;
+}
+
+body {
+    text-align: center;
+    overflow: hidden;
+}
+
+#main {
+    width: 400px;
+    margin: 0 auto;
+    height: 500px;
+    display: flex;
+    overflow: hidden;
+    z-index: 90;
+    position: absolute;
+}
+ 
+.col {
+    width: 100px;
+    height: 500px;
+    background-color: gray;
+    border: 1px solid black;
+}
+#top {
+    height: 50%;
+}
+
+#virus1, #virus2, #virus3, #virus4 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    margin-top: 0;
+    background-image: url(/img/virus.png);
+    background-size: 100%;
+    z-index: 100;
+}
+
+
+#bottom {
+    height: 50%;
+    background-color: red;
+    opacity: 30%;
+}
+
+#button-area {
+    margin: 0 auto;
+    display: flex;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    margin-top: 500px;
+    text-align: center;
+}
+
+#btn {
+    width: 100px;
+    height: 85px;
+    background-color: peru;
+    border: 1px solid black;
+}
+
+
+.modalOver {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 600px;
+    position: relative;
+}
